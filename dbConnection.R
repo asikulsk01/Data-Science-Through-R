@@ -1,0 +1,7 @@
+install.packages("DBI")
+any(grepl("DBI",installed.packages()))
+install.packages("RODBC")
+any(grepl("RODBC",installed.packages()))
+library(DBI)
+library(RODBC)
+myconn = odbcConnect("MyDSN",uid = "hr",pwd = "hr")

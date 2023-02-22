@@ -1,0 +1,10 @@
+getwd()
+library(rvest)
+library(dplyr)
+url = "https://www.mohfw.gov.in"
+webpage = read_html(url)
+tables = webpage %>% html_table()
+COVID_19 = data.frame(tables)
+COVID_19 = select(COVID_19,-6,-7,-8)
+write.csv(COVID_19,"COVID19_R.csv")
+print("Covid Data are successfully scrapped from the table ")

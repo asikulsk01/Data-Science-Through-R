@@ -1,0 +1,77 @@
+$(window).load(function() { 
+        
+    /* basic - default settings */
+		$('.str1').liMarquee();
+		
+		/* some custom settings */
+		$('.str2').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 500,	
+			scrollamount:90,	
+			circular: false,
+            hoverstop:false,	
+			drag: false			
+		});
+		
+		$('.str3').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:100,	
+			circular: true,		
+			drag: true			
+		});
+		
+		$('.str3-2').liMarquee({
+			direction: 'left',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:120,	
+			circular: true,		
+			drag: true			
+		});
+		
+		$('.str4').liMarquee({
+			direction: 'up',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: true,		
+			drag: true			
+		});
+		
+		$('.str5').liMarquee({
+			direction: 'down',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: true	,	
+			drag: false			
+		});
+		
+		$('.str6').liMarquee({
+			direction: 'up',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: false	,	
+			drag: true,			
+			runshort:false		
+		});
+		
+		
+		$('.str8').liMarquee({
+			direction: 'down',	
+			loop:-1,			
+			scrolldelay: 0,		
+			scrollamount:30,	
+			circular: false	,	
+			drag: true			
+		});
+		
+		$('.str9').liMarquee({
+			direction: 'right'	
+		});
+        
+    })
